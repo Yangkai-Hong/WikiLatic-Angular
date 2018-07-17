@@ -1,19 +1,25 @@
 {
-  "name": "try",
+  "name": "WikiLatic",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "MEAN stack data analytic web application",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
   },
-  "author": "",
+  "author": "Yangkai Hong",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
     "mongoose": "^5.0.15",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
     "path": "^0.12.7",
     "pug": "^2.0.0-rc.1",
-    "request": "^2.81.0"
+    "request": "^2.87.0"
   }
 }
