@@ -12,6 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import {HttpClientModule} from "@angular/common/http";
+import {AlertsModule} from "angular-alert-module";
 
 import {ValidateService} from "./services/validate.service";
 import {AuthService} from "./services/auth.service";
@@ -41,6 +42,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
+    AlertsModule.forRoot(),
     FormsModule,
     FlashMessagesModule,
     HttpClientModule

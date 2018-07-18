@@ -1,10 +1,7 @@
-<script src="//cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.min.js"></script>
-
 <body>
-
 <div>
 
-  <div class="card text-white bg-secondary mb-12">
+  <div class="card bg-light mb-12">
     <div class="card-header">Overall Analytics</div>
     <div class="card-body">
       <table class="table table-hover">
@@ -42,24 +39,16 @@
           </tr>
           <tr>
             <td colspan="2">
-              <select class="col-md-6" ng-change="drawChart()" ng-model="value">
+              <select class="col-md-6" (change)="drawChart($event.target.value)">
                 <option value="null">Select Chart Type</option>
-                <option value="bar">Bar Chart</option>
+                <option value="line">Line Chart</option>
                 <option value="pie">Pie Chart</option>
               </select>
             </td>
           </tr>
           <tr>
             <td colspan="2">
-              <canvas id="polar-area" class="chart chart-polar-area"
-                      chart-data="data" chart-labels="labels" chart-options="options">
-              </canvas>
-              <script>
-                angular.module("app", ["chart.js"]).controller("PolarAreaCtrl", function ($scope) {
-                  $scope.labels = ["Download Sales", "In-Store Sales", "Mail-Order Sales", "Tele Sales", "Corporate Sales"];
-                  $scope.data = [300, 500, 100, 40, 120];
-                });
-              </script>
+              <canvas id="chart"></canvas>
             </td>
           </tr>
         </tbody>
@@ -67,55 +56,67 @@
     </div>
   </div>
 
-  <div class="card text-white bg-secondary mb-12">
+  <app-alerts></app-alerts>
+  <div class="card bg-light mb-12">
     <div class="card-header">Individual Article Analytics</div>
     <div class="card-body">
       <table class="table table-hover">
         <tr>
-          <td id="alert" colspan="2"></td>
-        </tr>
-        <tr>
-          <td class="col-md-6"><select id="articleList"><option value="-1">Select Article</option></select></td>
-          <td><div class="input-group"><input class="form-control" id="titleInput" type="text" placeholder="Or enter an article title here..."><span class="input-group-btn"><button class="btn btn-info" id="titleBtn">Search</button></span></div></td>
-        </tr>
-        <tr>
-          <td>Title:</td>
-          <td id="SelectedTitle"></td>
-        </tr>
-        <tr>
-          <td>Total number of revisions:</td>
-          <td id="SelectedRevisions"></td>
-        </tr>
-        <tr>
-          <td>Top 5 users:</td>
-          <td id="SelectedTop5"></td>
-        </tr>
-        <tr>
-          <td colspan="2">
-          <div class="col-md-3"><select id="chartType"><option value="-1">Select Chart Type</option><option value="0">Bar Chart</option><option value="1">Pie Chart</option><option value="2">Bar Chart By Top5 Users</option></select></div>
-          <div class="col-md-6" id="checkboxArea"></div>
-          <div class="col-md-3"><button class="btn btn-info" id="submit">Draw</button></div>
+          <td>
+            <select class="col-md-5">
+              <option value="-1">Select Article</option>
+            </select>
+          </td>
+          <td class="input-group">
+              <input class="form-control" id="titleInput" type="text" placeholder="Or enter an article title here...">
+              <span class="input-group-btn"><button class="btn btn-info" id="titleBtn">Search</button></span>
           </td>
         </tr>
         <tr>
-          <td colspan="2"><div id="IndividualChart"></div></td>
+          <td>Title: </td> <td></td>
+        </tr>
+        <tr>
+          <td>Total number of revisions: </td> <td></td>
+        </tr>
+        <tr>
+          <td>Top 5 users: </td> <td></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <select>
+              <option value="-1">Select Chart Type</option>
+              <option value="0">Bar Chart</option>
+              <option value="1">Pie Chart</option>
+              <option value="2">Bar Chart By Top5 Users</option>
+            </select>
+          <div id="checkboxArea"></div>
+          <button *ngIf="top5!=[]" class="btn btn-info" id="submit">Draw</button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <canvas id="articleChart"></canvas>
+          </td>
         </tr>
       </table>
     </div>
   </div>
 
-  <div class="card text-white bg-secondary mb-12">
+  <div class="card bg-light mb-12">
     <div class="card-header">Author Analytics</div>
     <div class="card-body">
       <table class="table table-hover">
         <tr>
-          <td class="input-group"><input class="form-control" id="authorInput" type="text" placeholder="Enter author name here..."><span class="input-group-btn"><button class="btn btn-info" id="authorBtn">Search</button></span></td>
+          <td class="input-group">
+            <input class="form-control" id="authorInput" type="text" placeholder="Enter author name here...">
+            <span class="input-group-btn"><button class="btn btn-info" id="authorBtn">Search</button></span>
+          </td>
         </tr>
         <tr>
-          <td id="selectedAuthor">Author:</td>
+          <td>Author: </td>
         </tr>
         <tr>
-          <td id="authorArticlesList">Articles list below:</td>
+          <td>Articles list below: </td>
         </tr>
         <tr>
           <td><div class="panel-group" id="accordion"></div></td>
