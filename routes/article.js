@@ -157,8 +157,11 @@ router.get('/individual',(req,res,next) =>{
 
 router.get('/individual/top5',(req,res,next) =>{
 	var title = req.query.title
-	var users = req.query.users
-	//console.log(title,users)
+	// !!! Important !!! Convert string to array
+	//console.log(req.query.users)
+	var users = req.query.users.split(",")
+	console.log(users)
+
 	revision.getTop5RevNumByYear(title,users,function(err, result){
 		if (err != 0){console.log('error')}
 		else{

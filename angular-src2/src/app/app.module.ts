@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from "@angular/router";
-import {FormsModule} from "@angular/forms";
+import {FormsModule,ReactiveFormsModule} from "@angular/forms";
 import {FlashMessagesModule, FlashMessagesService} from "angular2-flash-messages";
 
 import { AppComponent } from './app.component';
@@ -13,6 +13,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import {HttpClientModule} from "@angular/common/http";
 import {AlertsModule} from "angular-alert-module";
+import {Ng2SearchPipeModule} from "ng2-search-filter";
+import {MatAutocompleteModule} from "@angular/material";
+import {MatFormFieldModule} from "@angular/material";
 
 import {ValidateService} from "./services/validate.service";
 import {AuthService} from "./services/auth.service";
@@ -44,8 +47,11 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     AlertsModule.forRoot(),
     FormsModule,
+    ReactiveFormsModule,
     FlashMessagesModule,
-    HttpClientModule
+    HttpClientModule,
+    MatAutocompleteModule,
+    MatFormFieldModule
   ],
   providers: [ValidateService, FlashMessagesService, AuthService,AuthGuard,OverallService,IndividualService,AuthorService],
   bootstrap: [AppComponent]
