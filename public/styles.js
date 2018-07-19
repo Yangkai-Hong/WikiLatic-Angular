@@ -539,7 +539,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/yangkaihong/Desktop/WikiLatic-Angular/angular-src/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /Users/yangkaihong/Desktop/WikiLatic-Angular/angular-src2/src/styles.css */"./src/styles.css");
 
 
 /***/ })

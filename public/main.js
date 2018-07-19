@@ -1,5 +1,285 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
 
+/***/ "./node_modules/moment/locale sync recursive ^\\.\\/.*$":
+/*!**************************************************!*\
+  !*** ./node_modules/moment/locale sync ^\.\/.*$ ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./af": "./node_modules/moment/locale/af.js",
+	"./af.js": "./node_modules/moment/locale/af.js",
+	"./ar": "./node_modules/moment/locale/ar.js",
+	"./ar-dz": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-dz.js": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-kw": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-kw.js": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-ly": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ly.js": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ma": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-ma.js": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-sa": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-sa.js": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-tn": "./node_modules/moment/locale/ar-tn.js",
+	"./ar-tn.js": "./node_modules/moment/locale/ar-tn.js",
+	"./ar.js": "./node_modules/moment/locale/ar.js",
+	"./az": "./node_modules/moment/locale/az.js",
+	"./az.js": "./node_modules/moment/locale/az.js",
+	"./be": "./node_modules/moment/locale/be.js",
+	"./be.js": "./node_modules/moment/locale/be.js",
+	"./bg": "./node_modules/moment/locale/bg.js",
+	"./bg.js": "./node_modules/moment/locale/bg.js",
+	"./bm": "./node_modules/moment/locale/bm.js",
+	"./bm.js": "./node_modules/moment/locale/bm.js",
+	"./bn": "./node_modules/moment/locale/bn.js",
+	"./bn.js": "./node_modules/moment/locale/bn.js",
+	"./bo": "./node_modules/moment/locale/bo.js",
+	"./bo.js": "./node_modules/moment/locale/bo.js",
+	"./br": "./node_modules/moment/locale/br.js",
+	"./br.js": "./node_modules/moment/locale/br.js",
+	"./bs": "./node_modules/moment/locale/bs.js",
+	"./bs.js": "./node_modules/moment/locale/bs.js",
+	"./ca": "./node_modules/moment/locale/ca.js",
+	"./ca.js": "./node_modules/moment/locale/ca.js",
+	"./cs": "./node_modules/moment/locale/cs.js",
+	"./cs.js": "./node_modules/moment/locale/cs.js",
+	"./cv": "./node_modules/moment/locale/cv.js",
+	"./cv.js": "./node_modules/moment/locale/cv.js",
+	"./cy": "./node_modules/moment/locale/cy.js",
+	"./cy.js": "./node_modules/moment/locale/cy.js",
+	"./da": "./node_modules/moment/locale/da.js",
+	"./da.js": "./node_modules/moment/locale/da.js",
+	"./de": "./node_modules/moment/locale/de.js",
+	"./de-at": "./node_modules/moment/locale/de-at.js",
+	"./de-at.js": "./node_modules/moment/locale/de-at.js",
+	"./de-ch": "./node_modules/moment/locale/de-ch.js",
+	"./de-ch.js": "./node_modules/moment/locale/de-ch.js",
+	"./de.js": "./node_modules/moment/locale/de.js",
+	"./dv": "./node_modules/moment/locale/dv.js",
+	"./dv.js": "./node_modules/moment/locale/dv.js",
+	"./el": "./node_modules/moment/locale/el.js",
+	"./el.js": "./node_modules/moment/locale/el.js",
+	"./en-au": "./node_modules/moment/locale/en-au.js",
+	"./en-au.js": "./node_modules/moment/locale/en-au.js",
+	"./en-ca": "./node_modules/moment/locale/en-ca.js",
+	"./en-ca.js": "./node_modules/moment/locale/en-ca.js",
+	"./en-gb": "./node_modules/moment/locale/en-gb.js",
+	"./en-gb.js": "./node_modules/moment/locale/en-gb.js",
+	"./en-ie": "./node_modules/moment/locale/en-ie.js",
+	"./en-ie.js": "./node_modules/moment/locale/en-ie.js",
+	"./en-il": "./node_modules/moment/locale/en-il.js",
+	"./en-il.js": "./node_modules/moment/locale/en-il.js",
+	"./en-nz": "./node_modules/moment/locale/en-nz.js",
+	"./en-nz.js": "./node_modules/moment/locale/en-nz.js",
+	"./eo": "./node_modules/moment/locale/eo.js",
+	"./eo.js": "./node_modules/moment/locale/eo.js",
+	"./es": "./node_modules/moment/locale/es.js",
+	"./es-do": "./node_modules/moment/locale/es-do.js",
+	"./es-do.js": "./node_modules/moment/locale/es-do.js",
+	"./es-us": "./node_modules/moment/locale/es-us.js",
+	"./es-us.js": "./node_modules/moment/locale/es-us.js",
+	"./es.js": "./node_modules/moment/locale/es.js",
+	"./et": "./node_modules/moment/locale/et.js",
+	"./et.js": "./node_modules/moment/locale/et.js",
+	"./eu": "./node_modules/moment/locale/eu.js",
+	"./eu.js": "./node_modules/moment/locale/eu.js",
+	"./fa": "./node_modules/moment/locale/fa.js",
+	"./fa.js": "./node_modules/moment/locale/fa.js",
+	"./fi": "./node_modules/moment/locale/fi.js",
+	"./fi.js": "./node_modules/moment/locale/fi.js",
+	"./fo": "./node_modules/moment/locale/fo.js",
+	"./fo.js": "./node_modules/moment/locale/fo.js",
+	"./fr": "./node_modules/moment/locale/fr.js",
+	"./fr-ca": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ca.js": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ch": "./node_modules/moment/locale/fr-ch.js",
+	"./fr-ch.js": "./node_modules/moment/locale/fr-ch.js",
+	"./fr.js": "./node_modules/moment/locale/fr.js",
+	"./fy": "./node_modules/moment/locale/fy.js",
+	"./fy.js": "./node_modules/moment/locale/fy.js",
+	"./gd": "./node_modules/moment/locale/gd.js",
+	"./gd.js": "./node_modules/moment/locale/gd.js",
+	"./gl": "./node_modules/moment/locale/gl.js",
+	"./gl.js": "./node_modules/moment/locale/gl.js",
+	"./gom-latn": "./node_modules/moment/locale/gom-latn.js",
+	"./gom-latn.js": "./node_modules/moment/locale/gom-latn.js",
+	"./gu": "./node_modules/moment/locale/gu.js",
+	"./gu.js": "./node_modules/moment/locale/gu.js",
+	"./he": "./node_modules/moment/locale/he.js",
+	"./he.js": "./node_modules/moment/locale/he.js",
+	"./hi": "./node_modules/moment/locale/hi.js",
+	"./hi.js": "./node_modules/moment/locale/hi.js",
+	"./hr": "./node_modules/moment/locale/hr.js",
+	"./hr.js": "./node_modules/moment/locale/hr.js",
+	"./hu": "./node_modules/moment/locale/hu.js",
+	"./hu.js": "./node_modules/moment/locale/hu.js",
+	"./hy-am": "./node_modules/moment/locale/hy-am.js",
+	"./hy-am.js": "./node_modules/moment/locale/hy-am.js",
+	"./id": "./node_modules/moment/locale/id.js",
+	"./id.js": "./node_modules/moment/locale/id.js",
+	"./is": "./node_modules/moment/locale/is.js",
+	"./is.js": "./node_modules/moment/locale/is.js",
+	"./it": "./node_modules/moment/locale/it.js",
+	"./it.js": "./node_modules/moment/locale/it.js",
+	"./ja": "./node_modules/moment/locale/ja.js",
+	"./ja.js": "./node_modules/moment/locale/ja.js",
+	"./jv": "./node_modules/moment/locale/jv.js",
+	"./jv.js": "./node_modules/moment/locale/jv.js",
+	"./ka": "./node_modules/moment/locale/ka.js",
+	"./ka.js": "./node_modules/moment/locale/ka.js",
+	"./kk": "./node_modules/moment/locale/kk.js",
+	"./kk.js": "./node_modules/moment/locale/kk.js",
+	"./km": "./node_modules/moment/locale/km.js",
+	"./km.js": "./node_modules/moment/locale/km.js",
+	"./kn": "./node_modules/moment/locale/kn.js",
+	"./kn.js": "./node_modules/moment/locale/kn.js",
+	"./ko": "./node_modules/moment/locale/ko.js",
+	"./ko.js": "./node_modules/moment/locale/ko.js",
+	"./ky": "./node_modules/moment/locale/ky.js",
+	"./ky.js": "./node_modules/moment/locale/ky.js",
+	"./lb": "./node_modules/moment/locale/lb.js",
+	"./lb.js": "./node_modules/moment/locale/lb.js",
+	"./lo": "./node_modules/moment/locale/lo.js",
+	"./lo.js": "./node_modules/moment/locale/lo.js",
+	"./lt": "./node_modules/moment/locale/lt.js",
+	"./lt.js": "./node_modules/moment/locale/lt.js",
+	"./lv": "./node_modules/moment/locale/lv.js",
+	"./lv.js": "./node_modules/moment/locale/lv.js",
+	"./me": "./node_modules/moment/locale/me.js",
+	"./me.js": "./node_modules/moment/locale/me.js",
+	"./mi": "./node_modules/moment/locale/mi.js",
+	"./mi.js": "./node_modules/moment/locale/mi.js",
+	"./mk": "./node_modules/moment/locale/mk.js",
+	"./mk.js": "./node_modules/moment/locale/mk.js",
+	"./ml": "./node_modules/moment/locale/ml.js",
+	"./ml.js": "./node_modules/moment/locale/ml.js",
+	"./mn": "./node_modules/moment/locale/mn.js",
+	"./mn.js": "./node_modules/moment/locale/mn.js",
+	"./mr": "./node_modules/moment/locale/mr.js",
+	"./mr.js": "./node_modules/moment/locale/mr.js",
+	"./ms": "./node_modules/moment/locale/ms.js",
+	"./ms-my": "./node_modules/moment/locale/ms-my.js",
+	"./ms-my.js": "./node_modules/moment/locale/ms-my.js",
+	"./ms.js": "./node_modules/moment/locale/ms.js",
+	"./mt": "./node_modules/moment/locale/mt.js",
+	"./mt.js": "./node_modules/moment/locale/mt.js",
+	"./my": "./node_modules/moment/locale/my.js",
+	"./my.js": "./node_modules/moment/locale/my.js",
+	"./nb": "./node_modules/moment/locale/nb.js",
+	"./nb.js": "./node_modules/moment/locale/nb.js",
+	"./ne": "./node_modules/moment/locale/ne.js",
+	"./ne.js": "./node_modules/moment/locale/ne.js",
+	"./nl": "./node_modules/moment/locale/nl.js",
+	"./nl-be": "./node_modules/moment/locale/nl-be.js",
+	"./nl-be.js": "./node_modules/moment/locale/nl-be.js",
+	"./nl.js": "./node_modules/moment/locale/nl.js",
+	"./nn": "./node_modules/moment/locale/nn.js",
+	"./nn.js": "./node_modules/moment/locale/nn.js",
+	"./pa-in": "./node_modules/moment/locale/pa-in.js",
+	"./pa-in.js": "./node_modules/moment/locale/pa-in.js",
+	"./pl": "./node_modules/moment/locale/pl.js",
+	"./pl.js": "./node_modules/moment/locale/pl.js",
+	"./pt": "./node_modules/moment/locale/pt.js",
+	"./pt-br": "./node_modules/moment/locale/pt-br.js",
+	"./pt-br.js": "./node_modules/moment/locale/pt-br.js",
+	"./pt.js": "./node_modules/moment/locale/pt.js",
+	"./ro": "./node_modules/moment/locale/ro.js",
+	"./ro.js": "./node_modules/moment/locale/ro.js",
+	"./ru": "./node_modules/moment/locale/ru.js",
+	"./ru.js": "./node_modules/moment/locale/ru.js",
+	"./sd": "./node_modules/moment/locale/sd.js",
+	"./sd.js": "./node_modules/moment/locale/sd.js",
+	"./se": "./node_modules/moment/locale/se.js",
+	"./se.js": "./node_modules/moment/locale/se.js",
+	"./si": "./node_modules/moment/locale/si.js",
+	"./si.js": "./node_modules/moment/locale/si.js",
+	"./sk": "./node_modules/moment/locale/sk.js",
+	"./sk.js": "./node_modules/moment/locale/sk.js",
+	"./sl": "./node_modules/moment/locale/sl.js",
+	"./sl.js": "./node_modules/moment/locale/sl.js",
+	"./sq": "./node_modules/moment/locale/sq.js",
+	"./sq.js": "./node_modules/moment/locale/sq.js",
+	"./sr": "./node_modules/moment/locale/sr.js",
+	"./sr-cyrl": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr-cyrl.js": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr.js": "./node_modules/moment/locale/sr.js",
+	"./ss": "./node_modules/moment/locale/ss.js",
+	"./ss.js": "./node_modules/moment/locale/ss.js",
+	"./sv": "./node_modules/moment/locale/sv.js",
+	"./sv.js": "./node_modules/moment/locale/sv.js",
+	"./sw": "./node_modules/moment/locale/sw.js",
+	"./sw.js": "./node_modules/moment/locale/sw.js",
+	"./ta": "./node_modules/moment/locale/ta.js",
+	"./ta.js": "./node_modules/moment/locale/ta.js",
+	"./te": "./node_modules/moment/locale/te.js",
+	"./te.js": "./node_modules/moment/locale/te.js",
+	"./tet": "./node_modules/moment/locale/tet.js",
+	"./tet.js": "./node_modules/moment/locale/tet.js",
+	"./tg": "./node_modules/moment/locale/tg.js",
+	"./tg.js": "./node_modules/moment/locale/tg.js",
+	"./th": "./node_modules/moment/locale/th.js",
+	"./th.js": "./node_modules/moment/locale/th.js",
+	"./tl-ph": "./node_modules/moment/locale/tl-ph.js",
+	"./tl-ph.js": "./node_modules/moment/locale/tl-ph.js",
+	"./tlh": "./node_modules/moment/locale/tlh.js",
+	"./tlh.js": "./node_modules/moment/locale/tlh.js",
+	"./tr": "./node_modules/moment/locale/tr.js",
+	"./tr.js": "./node_modules/moment/locale/tr.js",
+	"./tzl": "./node_modules/moment/locale/tzl.js",
+	"./tzl.js": "./node_modules/moment/locale/tzl.js",
+	"./tzm": "./node_modules/moment/locale/tzm.js",
+	"./tzm-latn": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm-latn.js": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm.js": "./node_modules/moment/locale/tzm.js",
+	"./ug-cn": "./node_modules/moment/locale/ug-cn.js",
+	"./ug-cn.js": "./node_modules/moment/locale/ug-cn.js",
+	"./uk": "./node_modules/moment/locale/uk.js",
+	"./uk.js": "./node_modules/moment/locale/uk.js",
+	"./ur": "./node_modules/moment/locale/ur.js",
+	"./ur.js": "./node_modules/moment/locale/ur.js",
+	"./uz": "./node_modules/moment/locale/uz.js",
+	"./uz-latn": "./node_modules/moment/locale/uz-latn.js",
+	"./uz-latn.js": "./node_modules/moment/locale/uz-latn.js",
+	"./uz.js": "./node_modules/moment/locale/uz.js",
+	"./vi": "./node_modules/moment/locale/vi.js",
+	"./vi.js": "./node_modules/moment/locale/vi.js",
+	"./x-pseudo": "./node_modules/moment/locale/x-pseudo.js",
+	"./x-pseudo.js": "./node_modules/moment/locale/x-pseudo.js",
+	"./yo": "./node_modules/moment/locale/yo.js",
+	"./yo.js": "./node_modules/moment/locale/yo.js",
+	"./zh-cn": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-cn.js": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-hk": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-hk.js": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-tw": "./node_modules/moment/locale/zh-tw.js",
+	"./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	var module = __webpack_require__(id);
+	return module;
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error('Cannot find module "' + req + '".');
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
+
+/***/ }),
+
 /***/ "./src/$$_lazy_route_resource lazy recursive":
 /*!**********************************************************!*\
   !*** ./src/$$_lazy_route_resource lazy namespace object ***!
@@ -56,23 +336,32 @@ module.exports = "<app-navbar></app-navbar>\n<div class=\"container\">\n  <flash
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var angular_alert_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! angular-alert-module */ "./node_modules/angular-alert-module/fesm5/alerts.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 var AppComponent = /** @class */ (function () {
-    function AppComponent() {
+    function AppComponent(alerts) {
+        this.alerts = alerts;
         this.title = 'app';
     }
+    AppComponent.prototype.ngOnInit = function () {
+    };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-root',
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
             styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
-        })
+        }),
+        __metadata("design:paramtypes", [angular_alert_module__WEBPACK_IMPORTED_MODULE_1__["AlertsService"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -105,15 +394,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/dashboard/dashboard.component */ "./src/app/components/dashboard/dashboard.component.ts");
 /* harmony import */ var _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/profile/profile.component */ "./src/app/components/profile/profile.component.ts");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _services_validate_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./services/validate.service */ "./src/app/services/validate.service.ts");
-/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./services/auth.service */ "./src/app/services/auth.service.ts");
-/* harmony import */ var _guards_auth_guard__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./guards/auth.guard */ "./src/app/guards/auth.guard.ts");
+/* harmony import */ var angular_alert_module__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! angular-alert-module */ "./node_modules/angular-alert-module/fesm5/alerts.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _services_validate_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./services/validate.service */ "./src/app/services/validate.service.ts");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var _guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./guards/auth.guard */ "./src/app/guards/auth.guard.ts");
+/* harmony import */ var _services_overall_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./services/overall.service */ "./src/app/services/overall.service.ts");
+/* harmony import */ var _services_individual_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./services/individual.service */ "./src/app/services/individual.service.ts");
+/* harmony import */ var _services_author_service__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./services/author.service */ "./src/app/services/author.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
+
+
 
 
 
@@ -134,8 +434,8 @@ var appRoutes = [
     { path: '', component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"] },
     { path: 'register', component: _components_register_register_component__WEBPACK_IMPORTED_MODULE_8__["RegisterComponent"] },
     { path: 'login', component: _components_login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"] },
-    { path: 'dashboard', component: _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_10__["DashboardComponent"], canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_15__["AuthGuard"]] },
-    { path: 'profile', component: _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_11__["ProfileComponent"], canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_15__["AuthGuard"]] },
+    { path: 'dashboard', component: _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_10__["DashboardComponent"], canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"]] },
+    { path: 'profile', component: _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_11__["ProfileComponent"], canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"]] },
 ];
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -154,11 +454,15 @@ var AppModule = /** @class */ (function () {
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(appRoutes),
+                angular_alert_module__WEBPACK_IMPORTED_MODULE_13__["AlertsModule"].forRoot(),
                 _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"],
                 angular2_flash_messages__WEBPACK_IMPORTED_MODULE_4__["FlashMessagesModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_12__["HttpClientModule"]
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_12__["HttpClientModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatAutocompleteModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_14__["MatFormFieldModule"]
             ],
-            providers: [_services_validate_service__WEBPACK_IMPORTED_MODULE_13__["ValidateService"], angular2_flash_messages__WEBPACK_IMPORTED_MODULE_4__["FlashMessagesService"], _services_auth_service__WEBPACK_IMPORTED_MODULE_14__["AuthService"], _guards_auth_guard__WEBPACK_IMPORTED_MODULE_15__["AuthGuard"]],
+            providers: [_services_validate_service__WEBPACK_IMPORTED_MODULE_15__["ValidateService"], angular2_flash_messages__WEBPACK_IMPORTED_MODULE_4__["FlashMessagesService"], _services_auth_service__WEBPACK_IMPORTED_MODULE_16__["AuthService"], _guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"], _services_overall_service__WEBPACK_IMPORTED_MODULE_18__["OverallService"], _services_individual_service__WEBPACK_IMPORTED_MODULE_19__["IndividualService"], _services_author_service__WEBPACK_IMPORTED_MODULE_20__["AuthorService"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
         })
     ], AppModule);
@@ -176,7 +480,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".card{\n  margin-bottom: 2rem;\n}\n\n"
 
 /***/ }),
 
@@ -187,7 +491,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">Dashboard</h2>\n<p>Welcome to your dashboard</p>\n"
+module.exports = "<body>\n\n<div class=\"card bg-light mb-12\">\n  <div class=\"card-header\">\n    <ul class=\"nav nav-tabs card-header-tabs\" (click)=\"selectSection($event)\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link active\" name=\"1\">Overall Analytics</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" name=\"2\">Individual Article Analytics</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" name=\"3\">Author Analytics</a>\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"card-body\">\n\n        <table *ngIf=\"section==1\" class=\"table table-hover\">\n          <tbody>\n          <tr>\n            <td>The articles with highest number of revisions:</td>\n            <td><ul><li *ngFor=\"let mostRev of mostRevs\">{{mostRev}}</li></ul></td>\n          </tr>\n          <tr>\n            <td>The articles with lowest number of revisions:</td>\n            <td><ul><li *ngFor=\"let leastRev of leastRevs\">{{leastRev}}</li></ul></td>\n          </tr>\n          <tr>\n            <td>The number of articles with highest and lowest number of revisions to display:</td>\n            <td class=\"input-group\">\n              <input class=\"form-control\" type=\"number\" min=\"1\" [(ngModel)]=\"revNum\">\n              <span class=\"input-group-btn\"><button class=\"btn btn-info\" (click)=\"changeRevNums(revNum)\">Change</button></span>\n            </td>\n          </tr>\n          <tr>\n            <td>The article edited by largest group of registered users:</td>\n            <td><ul><li *ngFor=\"let lGP of largeGP\">{{lGP}}</li></ul></td>\n          </tr>\n          <tr>\n            <td>The article edited by smallest groups of registered users:</td>\n            <td><ul><li *ngFor=\"let sGP of smallGP\">{{sGP}}</li></ul></td>\n          </tr>\n          <tr>\n            <td>The top 3 articles with the longest history (measured by age):</td>\n            <td><ul><li *ngFor=\"let lHis of longHis\">{{lHis}}</li></ul></td>\n          </tr>\n          <tr>\n            <td>The article with the shortest history (measured by age):</td>\n            <td><ul><li *ngFor=\"let sHis of shortHis\">{{sHis}}</li></ul></td>\n          </tr>\n          <tr>\n            <td colspan=\"2\">\n              <select class=\"col-md-6\" (change)=\"drawChart($event.target.value)\">\n                <option value=\"null\">Select Chart Type</option>\n                <option value=\"line\">Line Chart</option>\n                <option value=\"pie\">Pie Chart</option>\n              </select>\n            </td>\n          </tr>\n          <tr>\n            <td colspan=\"2\">\n              <canvas id=\"chart\"></canvas>\n            </td>\n          </tr>\n          </tbody>\n        </table>\n\n        <table *ngIf=\"section==2\" class=\"table table-hover\">\n          <tr>\n            <td colspan=\"2\">\n              <select class=\"col-md-12\" (change)=\"getArticleInfo($event.target.value)\">\n                <option value=\"null\">Select Article Title</option>\n                <option *ngFor=\"let article of articles\" value={{article}}>{{article}}</option>\n              </select>\n            </td>\n          </tr>\n          <tr>\n            <td>Title: </td> <td>{{articleTitle}}</td>\n          </tr>\n          <tr>\n            <td>Total number of revisions: </td> <td >{{articleRevNum}}</td>\n          </tr>\n          <tr>\n            <td>Top 5 users: </td> <td>{{articleTop5}}</td>\n          </tr>\n          <tr>\n            <td colspan=\"2\">\n              <select (change)=\"drawArticleChart($event.target.value)\">\n                <option value=\"null\">Select Chart Type</option>\n                <option value=\"line\">Line Chart</option>\n                <option value=\"pie\">Pie Chart</option>\n                <option value=\"top5\">Bar Chart By Top5 Users</option>\n              </select>\n\n              <div *ngIf=\"top5\" class=\"form-group\">\n                <span *ngFor=\"let option of articleTop5\">\n                  <label class=\"checkbox\" for=\"option\">\n                    <input type=\"checkbox\" id=\"option\" value=\"{{option}}\" (change)=\"selectTop5($event)\">{{option}}\n                  </label>\n                </span>\n                <button id=\"submit\" (click)=\"drawArticleTop5()\" class=\"btn btn-info\">Draw</button>\n              </div>\n\n            </td>\n          </tr>\n          <tr>\n            <td colspan=\"2\">\n              <canvas id=\"articleChart\"></canvas>\n            </td>\n          </tr>\n        </table>\n\n        <table *ngIf=\"section==3\" class=\"table table-hover\">\n          <tr>\n            <td class=\"input-group\">\n              <input class=\"form-control\" id=\"authorInput\" type=\"text\" placeholder=\"Enter author name here...\">\n              <span class=\"input-group-btn\"><button class=\"btn btn-info\" id=\"authorBtn\">Search</button></span>\n            </td>\n          </tr>\n          <tr>\n            <td>Author: </td>\n          </tr>\n          <tr>\n            <td>Articles list below: </td>\n          </tr>\n          <tr>\n            <td><div class=\"panel-group\" id=\"accordion\"></div></td>\n          </tr>\n        </table>\n      </div>\n    </div>\n\n</body>\n"
 
 /***/ }),
 
@@ -202,6 +506,13 @@ module.exports = "<h2 class=\"page-header\">Dashboard</h2>\n<p>Welcome to your d
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardComponent", function() { return DashboardComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_overall_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/overall.service */ "./src/app/services/overall.service.ts");
+/* harmony import */ var _services_individual_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/individual.service */ "./src/app/services/individual.service.ts");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! angular2-flash-messages */ "./node_modules/angular2-flash-messages/module/index.js");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(angular2_flash_messages__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var chart_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! chart.js */ "./node_modules/chart.js/src/chart.js");
+/* harmony import */ var chart_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(chart_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var angular_alert_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! angular-alert-module */ "./node_modules/angular-alert-module/fesm5/alerts.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -212,10 +523,412 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
+
+
 var DashboardComponent = /** @class */ (function () {
-    function DashboardComponent() {
+    function DashboardComponent(overallService, individualService, flashMessage, alerts) {
+        this.overallService = overallService;
+        this.individualService = individualService;
+        this.flashMessage = flashMessage;
+        this.alerts = alerts;
+        this.section = 1;
+        this.mostRevs = [];
+        this.leastRevs = [];
+        this.largeGP = [];
+        this.smallGP = [];
+        this.longHis = [];
+        this.shortHis = [];
+        this.revNum = 3;
+        this.chart = [];
+        this.articles = [];
+        this.articleTitle = null;
+        this.articleRevNum = null;
+        this.articleTop5 = null;
+        this.articleRevs = null;
+        this.top5 = null;
+        this.selectedTop5 = [];
     }
     DashboardComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.overallService.getMostRevs(3).subscribe(function (data) {
+            //console.log(data.length);
+            for (var i = 0; i < 3; i++) {
+                _this.mostRevs.push(data[i]['_id']);
+            }
+            //console.log(this.mostRevs)
+        });
+        this.overallService.getLeastRevs(3).subscribe(function (data) {
+            for (var i = 0; i < 3; i++) {
+                _this.leastRevs.push(data[i]['_id']);
+            }
+        });
+        this.overallService.getLargeGP().subscribe(function (data) {
+            for (var i = 0; i < 1; i++) {
+                _this.largeGP.push(data[i]['_id']);
+            }
+        });
+        this.overallService.getSmallGp().subscribe(function (data) {
+            for (var i = 0; i < 1; i++) {
+                _this.smallGP.push(data[i]['_id']);
+            }
+        });
+        this.overallService.getLongHis3().subscribe(function (data) {
+            for (var i = 0; i < 3; i++) {
+                _this.longHis.push(data[i]['_id']);
+            }
+        });
+        this.overallService.getShortHis().subscribe(function (data) {
+            for (var i = 0; i < 1; i++) {
+                _this.shortHis.push(data[i]['_id']);
+            }
+        });
+        this.individualService.getAllArticles().subscribe(function (data) {
+            for (var i = 0; i < data['length']; i++) {
+                _this.articles.push(data[i]['_id']);
+            }
+            //console.log(this.articles)
+        });
+    };
+    // *******************************************************************
+    DashboardComponent.prototype.changeRevNums = function (num) {
+        var _this = this;
+        if (this.revNum < 1) {
+            this.flashMessage.show('The number should be at least 1.', {
+                cssClass: 'alert-danger',
+                timeout: 3000
+            });
+        }
+        else {
+            this.mostRevs = [];
+            this.leastRevs = [];
+            this.overallService.getMostRevs(num).subscribe(function (data) {
+                //console.log(data)
+                for (var i = 0; i < num; i++) {
+                    _this.mostRevs.push(data[i]['_id']);
+                }
+            });
+            this.overallService.getLeastRevs(num).subscribe(function (data) {
+                for (var i = 0; i < num; i++) {
+                    _this.leastRevs.push(data[i]['_id']);
+                }
+            });
+        }
+    };
+    DashboardComponent.prototype.drawChart = function (type) {
+        var _this = this;
+        if (type == 'null') {
+            // Do nothing
+        }
+        else {
+            if (type == 'line') {
+                var labels = [];
+                var admin_1 = [];
+                var anon_1 = [];
+                var bot_1 = [];
+                var user_1 = [];
+                this.overallService.getChartData().subscribe(function (data) {
+                    //console.log(data)
+                    //console.log(data['length'])
+                    for (var i = 0; i < data['length']; i++) {
+                        labels.push(+data[i]['Year']);
+                        admin_1.push(data[i]['Administrator']);
+                        anon_1.push(data[i]['Anonymous']);
+                        bot_1.push(data[i]['Bot']);
+                        user_1.push(data[i]['Regular_user']);
+                    }
+                    _this.chart = new chart_js__WEBPACK_IMPORTED_MODULE_4__["Chart"]('chart', {
+                        type: 'line',
+                        data: {
+                            labels: labels,
+                            datasets: [
+                                {
+                                    label: 'Admin',
+                                    data: admin_1,
+                                    fill: false,
+                                    lineTension: 0.2,
+                                    borderColor: '#ff6384',
+                                    borderWidth: 1
+                                },
+                                {
+                                    label: 'Anonymous',
+                                    data: anon_1,
+                                    fill: false,
+                                    lineTension: 0.2,
+                                    borderColor: '#36a2eb',
+                                    borderWidth: 1
+                                },
+                                {
+                                    label: 'Bot',
+                                    data: bot_1,
+                                    fill: false,
+                                    lineTension: 0.2,
+                                    borderColor: '#cc65fe',
+                                    borderWidth: 1
+                                },
+                                {
+                                    label: 'Regular User',
+                                    data: user_1,
+                                    fill: false,
+                                    lineTension: 0.2,
+                                    borderColor: '#ffce56',
+                                    borderWidth: 1
+                                }
+                            ]
+                        },
+                        options: {
+                            title: {
+                                text: 'Revision Number Distribution by Year and by User Type',
+                                display: true
+                            }
+                        }
+                    });
+                });
+            }
+            else if (type == 'pie') {
+                var admin_2 = 0;
+                var anon_2 = 0;
+                var bot_2 = 0;
+                var user_2 = 0;
+                this.overallService.getChartData().subscribe(function (data) {
+                    for (var i = 0; i < data['length']; i++) {
+                        admin_2 += data[i]['Administrator'];
+                        anon_2 += data[i]['Anonymous'];
+                        bot_2 += data[i]['Bot'];
+                        user_2 += data[i]['Regular_user'];
+                    }
+                    var chartData = {
+                        datasets: [{
+                                data: [admin_2, anon_2, bot_2, user_2],
+                                backgroundColor: [
+                                    '#ff6384',
+                                    '#36a2eb',
+                                    '#cc65fe',
+                                    '#ffce56'
+                                ]
+                            }],
+                        labels: [
+                            'Admin',
+                            'Anonymous',
+                            'Bot',
+                            'User'
+                        ]
+                    };
+                    _this.chart = new chart_js__WEBPACK_IMPORTED_MODULE_4__["Chart"]('chart', {
+                        type: 'pie',
+                        data: chartData,
+                        options: {
+                            title: {
+                                text: 'Revision Number Distribution by User Type',
+                                display: true
+                            }
+                        }
+                    });
+                });
+            }
+        }
+    };
+    DashboardComponent.prototype.getArticleInfo = function (title) {
+        var _this = this;
+        this.individualService.getArticleRevs(title).subscribe(function (data) {
+            _this.flashMessage.show('Updatad ' + data['count'] + ' revisions for the selected article.', {
+                cssClass: 'alert-success',
+                timeout: 5000
+            });
+        });
+        this.individualService.getArticleInfo(title).subscribe(function (data) {
+            //console.log(data)
+            _this.articleTitle = data['Title'];
+            _this.articleRevNum = data['RevNum'];
+            _this.articleTop5 = data['top5'];
+            _this.articleRevs = data['result'];
+            //console.log(this.articleRevs)
+        });
+        this.selectedTop5 = [];
+    };
+    DashboardComponent.prototype.drawArticleChart = function (type) {
+        //console.log(this.articleRevs)
+        if (type == 'null') {
+            // Do nothing
+        }
+        else {
+            if (type == 'line') {
+                this.top5 = null;
+                var labels = [];
+                var admin = [];
+                var anon = [];
+                var bot = [];
+                var user = [];
+                for (var i_1 = 0; i_1 < this.articleRevs.length; i_1++) {
+                    labels.push(+this.articleRevs[i_1]['year']);
+                    admin.push(this.articleRevs[i_1]['admin']);
+                    anon.push(this.articleRevs[i_1]['anon']);
+                    bot.push(this.articleRevs[i_1]['bot']);
+                    user.push(this.articleRevs[i_1]['user']);
+                }
+                this.chart = new chart_js__WEBPACK_IMPORTED_MODULE_4__["Chart"]('articleChart', {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [
+                            {
+                                label: 'Admin',
+                                data: admin,
+                                fill: false,
+                                lineTension: 0.2,
+                                borderColor: '#ff6384',
+                                borderWidth: 1
+                            },
+                            {
+                                label: 'Anonymous',
+                                data: anon,
+                                fill: false,
+                                lineTension: 0.2,
+                                borderColor: '#36a2eb',
+                                borderWidth: 1
+                            },
+                            {
+                                label: 'Bot',
+                                data: bot,
+                                fill: false,
+                                lineTension: 0.2,
+                                borderColor: '#cc65fe',
+                                borderWidth: 1
+                            },
+                            {
+                                label: 'Regular User',
+                                data: user,
+                                fill: false,
+                                lineTension: 0.2,
+                                borderColor: '#ffce56',
+                                borderWidth: 1
+                            }
+                        ]
+                    },
+                    options: {
+                        title: {
+                            text: 'Revision Number Distribution by Year and by User Type of the Selected Article',
+                            display: true
+                        }
+                    }
+                });
+            }
+            else if (type == 'pie') {
+                this.top5 = null;
+                var admin = 0;
+                var anon = 0;
+                var bot = 0;
+                var user = 0;
+                for (var i = 0; i < this.articleRevs.length; i++) {
+                    admin += this.articleRevs[i]['admin'];
+                    anon += this.articleRevs[i]['anon'];
+                    bot += this.articleRevs[i]['bot'];
+                    user += this.articleRevs[i]['user'];
+                }
+                var chartData = {
+                    datasets: [{
+                            data: [admin, anon, bot, user],
+                            backgroundColor: [
+                                '#ff6384',
+                                '#36a2eb',
+                                '#cc65fe',
+                                '#ffce56'
+                            ]
+                        }],
+                    labels: [
+                        'Admin',
+                        'Anonymous',
+                        'Bot',
+                        'User'
+                    ]
+                };
+                this.chart = new chart_js__WEBPACK_IMPORTED_MODULE_4__["Chart"]('articleChart', {
+                    type: 'pie',
+                    data: chartData,
+                    options: {
+                        title: {
+                            text: 'Revision Number Distribution by User Type of the Selected Article',
+                            display: true
+                        }
+                    }
+                });
+            }
+            else if (type == 'top5') {
+                this.top5 = [];
+                this.selectedTop5 = [];
+            }
+        }
+    };
+    DashboardComponent.prototype.selectTop5 = function (e) {
+        if (e.target.checked) {
+            this.selectedTop5.push(e.target.value);
+        }
+        else {
+            var index = this.selectedTop5.indexOf(e.target.value);
+            this.selectedTop5.splice(index, 1);
+        }
+        //console.log(this.selectedTop5)
+    };
+    DashboardComponent.prototype.drawArticleTop5 = function () {
+        var _this = this;
+        this.individualService.getArticleTop5(this.articleTitle, this.selectedTop5).subscribe(function (data) {
+            console.log(data);
+            var part1 = data['length'] / _this.selectedTop5.length;
+            var labels = [];
+            var userData = [];
+            for (var i = 0; i < part1; i++) {
+                labels.push(data[i]['year']);
+            }
+            for (var i = 0; i < _this.selectedTop5.length; i++) {
+                userData[i] = [];
+                for (var j = i * part1; j < (i + 1) * part1; j++) {
+                    userData[i].push(data[j]['revNum']);
+                }
+            }
+            var colors = [
+                '#ff6384',
+                '#36a2eb',
+                '#cc65fe',
+                '#ffce56',
+                'green'
+            ];
+            var chartData = [];
+            for (var i = 0; i < _this.selectedTop5.length; i++) {
+                chartData.push({
+                    label: _this.selectedTop5[i],
+                    data: userData[i],
+                    fill: false,
+                    lineTension: 0.2,
+                    borderColor: colors[i],
+                    borderWidth: 1
+                });
+            }
+            _this.chart = new chart_js__WEBPACK_IMPORTED_MODULE_4__["Chart"]('articleChart', {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: chartData,
+                },
+                options: {
+                    title: {
+                        text: 'Revision Number Distribution by Selected Top5 Users',
+                        display: true
+                    }
+                }
+            });
+        });
+    };
+    DashboardComponent.prototype.selectSection = function ($event) {
+        var clickedElement = $event.target || $event.srcElement;
+        this.section = clickedElement.name;
+        var isCertainButtonAlreadyActive = clickedElement.parentElement.parentElement.querySelector(".active");
+        // if a Button already has Class: .active
+        if (isCertainButtonAlreadyActive) {
+            isCertainButtonAlreadyActive.classList.remove("active");
+        }
+        clickedElement.className += " active";
     };
     DashboardComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -223,7 +936,10 @@ var DashboardComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./dashboard.component.html */ "./src/app/components/dashboard/dashboard.component.html"),
             styles: [__webpack_require__(/*! ./dashboard.component.css */ "./src/app/components/dashboard/dashboard.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_services_overall_service__WEBPACK_IMPORTED_MODULE_1__["OverallService"],
+            _services_individual_service__WEBPACK_IMPORTED_MODULE_2__["IndividualService"],
+            angular2_flash_messages__WEBPACK_IMPORTED_MODULE_3__["FlashMessagesService"],
+            angular_alert_module__WEBPACK_IMPORTED_MODULE_5__["AlertsService"]])
     ], DashboardComponent);
     return DashboardComponent;
 }());
@@ -327,11 +1043,11 @@ module.exports = "<h2 class=\"page-header\">Login</h2>\n<form (submit)=\"onLogin
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/auth.service */ "./src/app/services/auth.service.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! angular2-flash-messages */ "./node_modules/angular2-flash-messages/module/index.js");
-/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(angular2_flash_messages__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! angular2-flash-messages */ "./node_modules/angular2-flash-messages/module/index.js");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(angular2_flash_messages__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -380,14 +1096,14 @@ var LoginComponent = /** @class */ (function () {
         });
     };
     LoginComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
             selector: 'app-login',
             template: __webpack_require__(/*! ./login.component.html */ "./src/app/components/login/login.component.html"),
             styles: [__webpack_require__(/*! ./login.component.css */ "./src/app/components/login/login.component.css")]
         }),
-        __metadata("design:paramtypes", [_services_auth_service__WEBPACK_IMPORTED_MODULE_1__["AuthService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
-            angular2_flash_messages__WEBPACK_IMPORTED_MODULE_3__["FlashMessagesService"]])
+        __metadata("design:paramtypes", [_services_auth_service__WEBPACK_IMPORTED_MODULE_0__["AuthService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
+            angular2_flash_messages__WEBPACK_IMPORTED_MODULE_2__["FlashMessagesService"]])
     ], LoginComponent);
     return LoginComponent;
 }());
@@ -575,7 +1291,7 @@ module.exports = "h2{\n  margin-top: 1.5em;\n  margin-bottom: 0.5em;\n}\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">Register</h2>\n<form (submit)=\"onRegisterSubmit()\">\n<div class=\"form-group\">\n  <label>Name</label>\n  <input type=\"text\" [(ngModel)]=\"name\" name=\"name\" class=\"form-control\">\n</div>\n<div class=\"form-group\">\n  <label>Username</label>\n  <input type=\"text\" [(ngModel)]=\"username\" name=\"username\" class=\"form-control\">\n</div>\n<div class=\"form-group\">\n  <label>Email</label>\n  <input type=\"text\" [(ngModel)]=\"email\" name=\"email\" class=\"form-control\">\n</div>\n<div class=\"form-group\">\n  <label>Password</label>\n  <input type=\"text\" [(ngModel)]=\"password\" name=\"password\" class=\"form-control\">\n</div>\n<input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\n</form>\n\n"
+module.exports = "<h2 class=\"page-header\">Register</h2>\n<form (submit)=\"onRegisterSubmit()\">\n<div class=\"form-group\">\n  <label>Name</label>\n  <input type=\"text\" [(ngModel)]=\"name\" name=\"name\" class=\"form-control\">\n</div>\n<div class=\"form-group\">\n  <label>Username</label>\n  <input type=\"text\" [(ngModel)]=\"username\" name=\"username\" class=\"form-control\">\n</div>\n<div class=\"form-group\">\n  <label>Email</label>\n  <input type=\"text\" [(ngModel)]=\"email\" name=\"email\" class=\"form-control\">\n</div>\n<div class=\"form-group\">\n  <label>Password</label>\n  <input type=\"password\" [(ngModel)]=\"password\" name=\"password\" class=\"form-control\">\n</div>\n<input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\n</form>\n\n"
 
 /***/ }),
 
@@ -803,12 +1519,178 @@ var AuthService = /** @class */ (function () {
         localStorage.clear();
     };
     AuthService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
-            providedIn: 'root'
-        }),
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({ providedIn: 'root' }),
         __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
     ], AuthService);
     return AuthService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/author.service.ts":
+/*!********************************************!*\
+  !*** ./src/app/services/author.service.ts ***!
+  \********************************************/
+/*! exports provided: AuthorService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthorService", function() { return AuthorService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AuthorService = /** @class */ (function () {
+    function AuthorService() {
+    }
+    AuthorService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({ providedIn: 'root' }),
+        __metadata("design:paramtypes", [])
+    ], AuthorService);
+    return AuthorService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/individual.service.ts":
+/*!************************************************!*\
+  !*** ./src/app/services/individual.service.ts ***!
+  \************************************************/
+/*! exports provided: IndividualService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IndividualService", function() { return IndividualService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var IndividualService = /** @class */ (function () {
+    function IndividualService(http) {
+        this.http = http;
+        this.baseUrl = "http://localhost:3000/article";
+    }
+    IndividualService.prototype.getAllArticles = function () {
+        return this.http.get(this.baseUrl + '/all')
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res; }));
+    };
+    IndividualService.prototype.getArticleRevs = function (title) {
+        var params = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpParams"]().set('title', title);
+        return this.http.get(this.baseUrl + '/individual/revisions', { params: params })
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res; }));
+    };
+    IndividualService.prototype.getArticleInfo = function (title) {
+        var params = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpParams"]().set('title', title);
+        return this.http.get(this.baseUrl + '/individual', { params: params })
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res; }));
+    };
+    IndividualService.prototype.getArticleTop5 = function (title, users) {
+        var params = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpParams"]().set('title', title)
+            .set('users', users);
+        //console.log(params)
+        return this.http.get(this.baseUrl + '/individual/top5', { params: params })
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res; }));
+    };
+    IndividualService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({ providedIn: 'root' }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], IndividualService);
+    return IndividualService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/overall.service.ts":
+/*!*********************************************!*\
+  !*** ./src/app/services/overall.service.ts ***!
+  \*********************************************/
+/*! exports provided: OverallService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OverallService", function() { return OverallService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var OverallService = /** @class */ (function () {
+    function OverallService(http) {
+        this.http = http;
+        this.baseUrl = "http://localhost:3000/overall";
+    }
+    OverallService.prototype.getMostRevs = function (num) {
+        var params = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpParams"]().set('num', num);
+        return this.http.get(this.baseUrl + '/mostRevisions', { params: params })
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res; }));
+    };
+    OverallService.prototype.getLeastRevs = function (num) {
+        var params = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpParams"]().set('num', num);
+        return this.http.get(this.baseUrl + '/leastRevisions', { params: params })
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res; }));
+    };
+    OverallService.prototype.getLargeGP = function () {
+        return this.http.get(this.baseUrl + '/largestGroup')
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res; }));
+    };
+    OverallService.prototype.getSmallGp = function () {
+        return this.http.get(this.baseUrl + '/smallestGroup')
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res; }));
+    };
+    OverallService.prototype.getLongHis3 = function () {
+        return this.http.get(this.baseUrl + '/longestHistory')
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res; }));
+    };
+    OverallService.prototype.getShortHis = function () {
+        return this.http.get(this.baseUrl + '/shortestHistory')
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res; }));
+    };
+    OverallService.prototype.getChartData = function () {
+        return this.http.get(this.baseUrl + '/chartData')
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res; }));
+    };
+    OverallService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({ providedIn: 'root' }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], OverallService);
+    return OverallService;
 }());
 
 
@@ -852,9 +1734,7 @@ var ValidateService = /** @class */ (function () {
         return re.test(String(email).toLowerCase());
     };
     ValidateService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
-            providedIn: 'root'
-        }),
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({ providedIn: 'root' }),
         __metadata("design:paramtypes", [])
     ], ValidateService);
     return ValidateService;
@@ -924,7 +1804,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/yangkaihong/Desktop/WikiLatic-Angular/angular-src/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/yangkaihong/Desktop/WikiLatic-Angular/angular-src2/src/main.ts */"./src/main.ts");
 
 
 /***/ })
