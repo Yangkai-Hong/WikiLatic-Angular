@@ -42,5 +42,8 @@ export class OverallService {
     return this.http.get(this.baseUrl+'/chartData')
       .pipe(map(res=>res))
   }
-
+  addUserType(){
+    return this.http.get(this.baseUrl+'/addUserType')
+      .pipe(map(res=>res))
+  }
 }

@@ -553,6 +553,10 @@ var DashboardComponent = /** @class */ (function () {
     }
     DashboardComponent.prototype.ngOnInit = function () {
         var _this = this;
+        // Add User Type to all revisions
+        this.overallService.addUserType().subscribe(function (data) {
+            console.log('User type has been added');
+        });
         this.overallService.getMostRevs(3).subscribe(function (data) {
             //console.log(data.length);
             for (var i = 0; i < 3; i++) {
@@ -1684,6 +1688,10 @@ var OverallService = /** @class */ (function () {
     };
     OverallService.prototype.getChartData = function () {
         return this.http.get(this.baseUrl + '/chartData')
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res; }));
+    };
+    OverallService.prototype.addUserType = function () {
+        return this.http.get(this.baseUrl + '/addUserType')
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res; }));
     };
     OverallService = __decorate([

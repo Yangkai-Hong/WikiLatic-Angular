@@ -33,6 +33,12 @@ export class DashboardComponent implements OnInit {
               private alerts:AlertsService) { }
 
   ngOnInit() {
+
+    // Add User Type to all revisions
+    this.overallService.addUserType().subscribe(data=>{
+      console.log('User type has been added')
+    });
+
     this.overallService.getMostRevs(3).subscribe(data=>{
       //console.log(data.length);
       for (var i=0;i<3;i++){
