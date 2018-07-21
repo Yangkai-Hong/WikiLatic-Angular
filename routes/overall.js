@@ -8,19 +8,30 @@ var BotNumber = new Array()
 var AdminNumber = new Array()
 var UserNumber = new Array()
 
-router.get('/mostRevisions',(req,res,next) => {
+var mostRevisions = new Array()
+var leastRevisions = new Array()
+var longestHistory = new Array()
+var shortestHistory = new Array()
+var largestGroup = new Array()
+var smallestGroup = new Array()
+
+router.get('/infos',(req,res,next) => {
     var num = parseInt(req.query.num);
     revision.MostRevisions(num, function (err, result) {
         if (err != 0) {
             console.log('mostRevs err in overall router')
         }
         else {
-			res.json(result);
+        	mostRevisions = [];
+        	for (var i=0;i<result.length;i++){
+                mostRevisions.push(result[i]['_id'])
+			}
         }
     })
+	next();
 });
 
-router.get('/leastRevisions',(req,res,next) => {
+router.get('/infos',(req,res,next) => {
     var num = parseInt(req.query.num);
     revision.LeastRevisions(num, function (err, result) {
         LeastRevisions = new Array();
@@ -28,55 +39,80 @@ router.get('/leastRevisions',(req,res,next) => {
             console.log('leastRevs err in overall router')
         }
         else {
-            res.json(result);
+        	leastRevisions = [];
+            for (var i=0;i<result.length;i++){
+            	leastRevisions.push(result[i]['_id'])
+			}
         }
     })
+	next();
 });
 
-router.get('/largestGroup',(req,res,next) =>{
+router.get('/infos',(req,res,next) =>{
     revision.LargestGroup(function (err, result) {
         LargestGroup = new Array();
         if (err != 0) {
             console.log('largeGP error in overall router')
         }
         else {
-            res.json(result)
+            largestGroup = [];
+            for (var i=0;i<result.length;i++){
+            	largestGroup.push(result[i]['_id'])
+			}
         }
     })
+	next();
 });
 
-router.get('/smallestGroup',(req,res,next) =>{
+router.get('/infos',(req,res,next) =>{
     revision.SmallestGroup(function (err, result) {
         SmallestGroup = new Array();
         if (err != 0) {
             console.log('smallGP error in overall router')
         }
         else {
-            res.json(result)
+            smallestGroup = [];
+            for (var i=0;i<result.length;i++){
+                smallestGroup.push(result[i]['_id'])
+            }
         }
     })
+	next();
 });
 
-router.get('/longestHistory',(req,res,next) =>{
+router.get('/infos',(req,res,next) =>{
     revision.top3LongestHistory(function (err, result) {
         longHis = new Array();
         if (err != 0) {
             console.log('longHis error in overall router')
         }
         else {
-            res.json(result)
+            longestHistory = [];
+            for (var i=0;i<result.length;i++){
+                longestHistory.push(result[i]['_id'])
+            }
         }
     })
+	next()
 });
 
-router.get('/shortestHistory',(req,res,next) =>{
+router.get('/infos',(req,res,next) =>{
     revision.ShortestHistory(function(err,result){
         shortHis = new Array();
         if (err != 0){
             console.log('shortHis error in overall router')
         }
         else{
-            res.json(result)
+            shortestHistory = [];
+            for (var i=0;i<result.length;i++){
+                shortestHistory.push(result[i]['_id'])
+            }
+            res.json({mostRevisions: mostRevisions,
+				leastRevisions: leastRevisions,
+				longestHistory: longestHistory,
+				shortestHistory: shortestHistory,
+				largestGroup: largestGroup,
+				smallestGroup: smallestGroup})
         }
     })
 });
@@ -220,6 +256,7 @@ txtToArray(bots,botArray);
 txtToArray(admins,adminArray);
 
 router.get('/addUserType',(req,res,next) =>{
+	//console.log(botArray)
     revision.addUserType(botArray, 'bot',function (err) {
 		if (err!=0){
 			console.log('addBot error in overall router')
@@ -240,7 +277,6 @@ router.get('/addUserType',(req,res,next) =>{
 			console.log("Have added {userType:'admin'} to "+adminArray.length +" admins")
 		}
     });
-    next();
 });
 
 module.exports = router;

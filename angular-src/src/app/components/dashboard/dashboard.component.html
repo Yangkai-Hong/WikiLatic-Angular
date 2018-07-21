@@ -1,0 +1,135 @@
+<body>
+
+<div class="card bg-light mb-12">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs" (click)="selectSection($event)">
+      <li class="nav-item">
+        <a class="nav-link active" name="1">Overall Analytics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" name="2">Individual Article Analytics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" name="3">Author Analytics</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card-body">
+
+        <table *ngIf="section==1" class="table table-hover">
+          <tbody>
+          <tr>
+            <td>The articles with highest number of revisions:</td>
+            <td><ul><li *ngFor="let mostRev of mostRevs">{{mostRev}}</li></ul></td>
+          </tr>
+          <tr>
+            <td>The articles with lowest number of revisions:</td>
+            <td><ul><li *ngFor="let leastRev of leastRevs">{{leastRev}}</li></ul></td>
+          </tr>
+          <tr>
+            <td>The number of articles with highest and lowest number of revisions to display:</td>
+            <td class="input-group">
+              <input class="form-control" type="number" min="1" [(ngModel)]="revNum">
+              <span class="input-group-btn"><button class="btn btn-info" (click)="changeRevNums(revNum)">Change</button></span>
+            </td>
+          </tr>
+          <tr>
+            <td>The article edited by largest group of registered users:</td>
+            <td><ul><li *ngFor="let lGP of largeGP">{{lGP}}</li></ul></td>
+          </tr>
+          <tr>
+            <td>The article edited by smallest groups of registered users:</td>
+            <td><ul><li *ngFor="let sGP of smallGP">{{sGP}}</li></ul></td>
+          </tr>
+          <tr>
+            <td>The top 3 articles with the longest history (measured by age):</td>
+            <td><ul><li *ngFor="let lHis of longHis">{{lHis}}</li></ul></td>
+          </tr>
+          <tr>
+            <td>The article with the shortest history (measured by age):</td>
+            <td><ul><li *ngFor="let sHis of shortHis">{{sHis}}</li></ul></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <select class="col-md-6" (change)="drawChart($event.target.value)">
+                <option value="null">Select Chart Type</option>
+                <option value="line">Line Chart</option>
+                <option value="pie">Pie Chart</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <canvas id="chart"></canvas>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table *ngIf="section==2" class="table table-hover">
+          <tr>
+            <td colspan="2">
+              <select class="col-md-12" (change)="getArticleInfo($event.target.value)">
+                <option value="null">Select Article Title</option>
+                <option *ngFor="let article of articles" value={{article}}>{{article}}</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Title: </td> <td>{{articleTitle}}</td>
+          </tr>
+          <tr>
+            <td>Total number of revisions: </td> <td >{{articleRevNum}}</td>
+          </tr>
+          <tr>
+            <td>Top 5 users: </td> <td>{{articleTop5}}</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <select (change)="drawArticleChart($event.target.value)">
+                <option value="null">Select Chart Type</option>
+                <option value="line">Line Chart</option>
+                <option value="pie">Pie Chart</option>
+                <option value="top5">Bar Chart By Top5 Users</option>
+              </select>
+
+              <div *ngIf="top5" class="form-group">
+                <span *ngFor="let option of articleTop5">
+                  <label class="checkbox" for="option" style="margin-right: 1rem;margin-top: 1rem;">
+                    <input type="checkbox" id="option" value="{{option}}" (change)="selectTop5($event)">{{option}}
+                  </label>
+                </span>
+                <button id="submit" (click)="drawArticleTop5()" class="btn btn-info" style="margin-left: 1rem">Draw</button>
+              </div>
+
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <canvas id="articleChart"></canvas>
+            </td>
+          </tr>
+        </table>
+
+        <table *ngIf="section==3" class="table table-hover">
+          <tr>
+            <td class="input-group">
+              <input class="form-control" id="authorInput" type="text" placeholder="Enter author name here...">
+              <span class="input-group-btn"><button class="btn btn-info" id="authorBtn">Search</button></span>
+            </td>
+          </tr>
+          <tr>
+            <td>Author: </td>
+          </tr>
+          <tr>
+            <td>Articles list below: </td>
+          </tr>
+          <tr>
+            <td><div class="panel-group" id="accordion"></div></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+</body>

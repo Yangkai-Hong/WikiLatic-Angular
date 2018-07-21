@@ -1,0 +1,38 @@
+<main role="main">
+  <div class="jumbotron">
+     <div class="container">
+        <h1 class="display-3">MEAN WikiLatic</h1>
+        <p class="lead">This is a Data Analytic Web Application. The dataset contains a number of files in JSON formats storing revision histories of Wikipedia articles. The dataset was created by querying wikipedia API. The articles are selected from
+          Featured Articles.</p>
+        <p style="float: left"><a class="btn btn-primary btn-lg" [routerLink]="['/register']" role="button">Register &raquo;</a></p>
+        <p><a class="btn btn-default" [routerLink]="['/login']">Login</a></p>
+     </div>
+   </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Overall Analysis</h2>
+        <p>Overall yearly revision number distribution</p>
+        <img src="../../assets/images/fig1.png" width="300px" height="300px">
+      </div>
+      <div class="col-md-4">
+        <h2>Individual Article Analysis</h2>
+        <p>User type distribution</p>
+        <img src="../../assets/images/fig4.png" width="300px" height="300px">
+      </div>
+      <div class="col-md-4">
+        <h2>Author Analysis</h2>
+        <p>User type distribution</p>
+        <img src="../../assets/images/fig5.png" width="300px" height="300px">
+      </div>
+    </div>
+
+    <hr>
+
+  </div> <!-- /container -->
+</main>
+
+<footer class="container">
+  <p>&copy; MEAN WikiLatic 2018 Yangkai Hong</p>
+</footer>
