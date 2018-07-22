@@ -5,6 +5,9 @@ const cors = require('cors');
 const passport = require('passport');
 const mongoose = require('mongoose');
 const config = require('./config/database')
+const http = require('http');
+const https = require('https');
+const fs = require('fs');
 
 /*// Connect to MongoDB Atlas
 var uri = "mongodb+srv://hyk:Srhongyangkai1994@yangkai-hong-mdsnm.mongodb.net/wikipedia";
@@ -33,6 +36,8 @@ const author = require('./routes/author');
 
 // Port Number
 const port = 3000;
+const httpPort = 80;
+const httpsPort = 443;
 
 // CORS Middleware
 app.use(cors());
@@ -61,8 +66,22 @@ app.use('/author',author);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Start Server
-app.listen(port, () => {
+/*app.listen(httpsPort, () => {
 	console.log('Server started on port '+port);
+});*/
+
+var options = {
+	key:fs.readFileSync('./private.key'),
+	cert:fs.readFileSync('./certificate.crt')
+}
+
+https.createServer(options,app).listen(443,function(){
+	console.log('Https server listening');
 });
+
+http.createServer(function(req,res){
+	res.writeHead(301,{"Location":"https://"+req.headers['host']+req.url});
+	res.end();
+}).listen(80);
 	
 module.exports = app;

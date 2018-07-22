@@ -7,7 +7,8 @@ import {Params} from "@angular/router";
   {providedIn: 'root'}
 )
 export class AuthorService {
-  baseUrl = "http://localhost:3000/author"
+  //baseUrl = "http://localhost:3000/author"
+	baseUrl = "https://www.hyk.party/author"
 
   constructor(
     private http:HttpClient

@@ -7,7 +7,8 @@ import {Params} from "@angular/router";
   {providedIn: 'root'}
 )
 export class IndividualService {
-  baseUrl = "http://localhost:3000/article"
+  //baseUrl = "http://localhost:3000/article"
+	baseUrl = "https://www.hyk.party/article"
 
   constructor(
     private http:HttpClient

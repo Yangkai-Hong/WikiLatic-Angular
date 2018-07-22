@@ -7,7 +7,7 @@ import {map} from "rxjs/operators";
   {providedIn: 'root'}
 )
 export class AuthService {
-
+	baseUrl = "https://www.hyk.party/users"
   authToken: any;
   user: any;
 
@@ -19,7 +19,7 @@ export class AuthService {
         'Content-Type':'application/json'
       })
     }
-    return this.http.post('http://localhost:3000/users/register',user,httpOptions)
+    return this.http.post(baseUrl+'/register',user,httpOptions)
       .pipe(map(res=>res))
   }
 
@@ -29,7 +29,7 @@ export class AuthService {
         'Content-Type':'application/json'
       })
     }
-    return this.http.post('http://localhost:3000/users/authenticate',user,httpOptions)
+    return this.http.post(baseUrl+'/authenticate',user,httpOptions)
       .pipe(map(res=>res))
   }
 
@@ -41,7 +41,7 @@ export class AuthService {
         'Authorization':this.authToken
       })
     }
-    return this.http.get('http://localhost:3000/users/profile',httpOptions)
+    return this.http.get(baseUrl+'/profile',httpOptions)
       .pipe(map(res=>res))
   }
 

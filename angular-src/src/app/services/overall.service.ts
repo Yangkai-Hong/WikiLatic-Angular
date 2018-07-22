@@ -8,7 +8,8 @@ import {mergeAnimationOptions} from "@angular/animations/browser/src/util";
   {providedIn: 'root'}
 )
 export class OverallService {
-  baseUrl = "http://localhost:3000/overall"
+  //baseUrl = "http://localhost:3000/overall"
+	baseUrl = "https://www.hyk.party/overall"
 
   constructor(private http:HttpClient) { }
 
