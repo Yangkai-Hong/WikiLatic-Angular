@@ -5473,7 +5473,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/yangkaihong/Desktop/projects/WikiLatic-Angular/angular-src/src/polyfills.ts */"./src/polyfills.ts");
+module.exports = __webpack_require__(/*! /home/ec2-user/wikilatic-angular/angular-src/src/polyfills.ts */"./src/polyfills.ts");
 
 
 /***/ })

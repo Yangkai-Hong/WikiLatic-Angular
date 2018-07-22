@@ -1501,6 +1501,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var AuthService = /** @class */ (function () {
     function AuthService(http) {
         this.http = http;
+        this.baseUrl = "https://www.hyk.party/users";
     }
     AuthService.prototype.registerUser = function (user) {
         var httpOptions = {
@@ -1508,7 +1509,7 @@ var AuthService = /** @class */ (function () {
                 'Content-Type': 'application/json'
             })
         };
-        return this.http.post('http://localhost:3000/users/register', user, httpOptions)
+        return this.http.post(this.baseUrl + '/register', user, httpOptions)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res; }));
     };
     AuthService.prototype.authenticateUser = function (user) {
@@ -1517,7 +1518,7 @@ var AuthService = /** @class */ (function () {
                 'Content-Type': 'application/json'
             })
         };
-        return this.http.post('http://localhost:3000/users/authenticate', user, httpOptions)
+        return this.http.post(this.baseUrl + '/authenticate', user, httpOptions)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res; }));
     };
     AuthService.prototype.getProfile = function () {
@@ -1528,7 +1529,7 @@ var AuthService = /** @class */ (function () {
                 'Authorization': this.authToken
             })
         };
-        return this.http.get('http://localhost:3000/users/profile', httpOptions)
+        return this.http.get(this.baseUrl + '/profile', httpOptions)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res; }));
     };
     AuthService.prototype.loadToken = function () {
@@ -1593,7 +1594,8 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var AuthorService = /** @class */ (function () {
     function AuthorService(http) {
         this.http = http;
-        this.baseUrl = "http://localhost:3000/author";
+        //baseUrl = "http://localhost:3000/author"
+        this.baseUrl = "https://www.hyk.party/author";
     }
     AuthorService.prototype.getAllUniqueAuthors = function () {
         return this.http.get(this.baseUrl + '/all')
@@ -1643,7 +1645,8 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var IndividualService = /** @class */ (function () {
     function IndividualService(http) {
         this.http = http;
-        this.baseUrl = "http://localhost:3000/article";
+        //baseUrl = "http://localhost:3000/article"
+        this.baseUrl = "https://www.hyk.party/article";
     }
     IndividualService.prototype.getAllArticles = function () {
         return this.http.get(this.baseUrl + '/all')
@@ -1705,7 +1708,8 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var OverallService = /** @class */ (function () {
     function OverallService(http) {
         this.http = http;
-        this.baseUrl = "http://localhost:3000/overall";
+        //baseUrl = "http://localhost:3000/overall"
+        this.baseUrl = "https://www.hyk.party/overall";
     }
     OverallService.prototype.getInfos = function (num) {
         var params = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpParams"]().set('num', num);
@@ -1838,7 +1842,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/yangkaihong/Desktop/projects/WikiLatic-Angular/angular-src/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /home/ec2-user/wikilatic-angular/angular-src/src/main.ts */"./src/main.ts");
 
 
 /***/ })

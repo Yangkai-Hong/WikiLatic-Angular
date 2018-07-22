@@ -19,7 +19,7 @@ export class AuthService {
         'Content-Type':'application/json'
       })
     }
-    return this.http.post(baseUrl+'/register',user,httpOptions)
+    return this.http.post(this.baseUrl+'/register',user,httpOptions)
       .pipe(map(res=>res))
   }
 
@@ -29,7 +29,7 @@ export class AuthService {
         'Content-Type':'application/json'
       })
     }
-    return this.http.post(baseUrl+'/authenticate',user,httpOptions)
+    return this.http.post(this.baseUrl+'/authenticate',user,httpOptions)
       .pipe(map(res=>res))
   }
 
@@ -41,7 +41,7 @@ export class AuthService {
         'Authorization':this.authToken
       })
     }
-    return this.http.get(baseUrl+'/profile',httpOptions)
+    return this.http.get(this.baseUrl+'/profile',httpOptions)
       .pipe(map(res=>res))
   }
 
