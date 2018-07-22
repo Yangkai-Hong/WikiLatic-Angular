@@ -9,7 +9,9 @@ import {Params} from "@angular/router";
 export class IndividualService {
   baseUrl = "http://localhost:3000/article"
 
-  constructor(private http:HttpClient) { }
+  constructor(
+    private http:HttpClient
+  ) { }
 
   getAllArticles(){
     return this.http.get(this.baseUrl+'/all')

@@ -14,13 +14,18 @@ router.get('/revisions',(req,res,next) =>{
     })
 });
 
-router.get('/',(req,res,next) =>{
+var authors = [];
+router.get('/all',(req,res,next) =>{
     revision.getUniqueAuthors(function (err,result) {
         if (err!=0){
             res.json({'authors':'error'})
         }
         else{
-            res.json(result)
+            authors = [];
+            for (var i=0;i<result.length;i++){
+                authors.push(result[i]['_id'])
+            }
+            res.json({authors:authors})
         }
     })
 });

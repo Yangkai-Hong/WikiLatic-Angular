@@ -376,6 +376,7 @@ module.exports.getUniqueAuthors = function(callback){
 		{'$match':{user:{'$exists':true}}},
 		{'$match':{user:{$ne:""}}},
 		{'$group':{_id:'$user','revNum':{$sum:1}}},
+		{'$match':{revNum:{$gt:9}}},
 		{'$sort':{revNum:-1}}
 	]
 	Revision.aggregate(uniqueAuthors,function (err,results) {

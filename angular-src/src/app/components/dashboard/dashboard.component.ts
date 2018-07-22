@@ -1,13 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {OverallService} from "../../services/overall.service";
 import {IndividualService} from "../../services/individual.service";
+import {AuthorService} from "../../services/author.service";
 import {FlashMessagesService} from "angular2-flash-messages";
 import {Chart} from "chart.js"
 import {AlertsService} from "angular-alert-module";
-import {FormControl} from "@angular/forms";
-import {MatFormField} from "@angular/material";
-import {usesServiceWorker} from "@angular-devkit/build-angular/src/angular-cli-files/utilities/service-worker";
-import {discardPeriodicTasks} from "@angular/core/testing";
 
 @Component({
   selector: 'app-dashboard',
@@ -28,10 +25,15 @@ export class DashboardComponent implements OnInit {
 
   articles = [];
 
+  authors = [];
+  author = null;
+
   constructor(private overallService:OverallService,
               private individualService:IndividualService,
+              private authorService:AuthorService,
               private flashMessage:FlashMessagesService,
-              private alerts:AlertsService) { }
+              private alerts:AlertsService,
+              ) { }
 
   ngOnInit() {
     // Add User Type to all revisions
@@ -57,6 +59,15 @@ export class DashboardComponent implements OnInit {
         this.articles.push(data[i]['_id'])
       }
       //console.log(this.articles)
+    })
+
+      // Author Analytics Section *******************************************
+
+    this.authorService.getAllUniqueAuthors().subscribe(data=>{
+      console.log(data)
+        for (var i=0;i<data['authors'].length;i++){
+          this.authors.push(data['authors'][i])
+        }
     })
 
   }
@@ -417,6 +428,48 @@ export class DashboardComponent implements OnInit {
       isCertainButtonAlreadyActive.classList.remove("active");
     }
     clickedElement.className += " active";
+  }
+
+  // Author Analytics Section *************************************
+  authorTitles = [];
+  authorArticles = [];
+
+  getRevsOfAuthor(author){
+      this.authorService.getRevsOfAuthor(this.author).subscribe(data=>{
+        console.log(data)
+          for (var i=0;i<data['length'];i++){
+            if (this.authorTitles.indexOf(data[i]['_id']['title']) == -1){
+              this.authorTitles.push(data[i]['_id']['title'])
+            }
+          }
+          //console.log(this.authorTitles)
+
+          for (var i=0;i<this.authorTitles.length;i++){
+            var revNum = 0;
+            var timestamp = [];
+            for (var j=0;j<data['length'];j++){
+              if (this.authorTitles[i] == data[j]['_id']['title']){
+                 revNum += 1 ;
+                 timestamp.push(data[j]['_id']['timestamp'])
+              }
+            }
+              this.authorArticles.push({
+                  title: this.authorTitles[i],
+                  revNums: revNum,
+                  timestamp: timestamp,
+                  show:false
+              })
+          }
+          //console.log(this.authorArticles)
+      })
+  }
+
+  toggleDetails(title){
+    for (var i=0;i<this.authorArticles.length;i++){
+      if (title == this.authorArticles[i]['title']){
+        this.authorArticles[i]['show'] = !this.authorArticles[i]['show']
+      }
+    }
   }
 
 }

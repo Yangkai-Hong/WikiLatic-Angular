@@ -13,9 +13,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import {HttpClientModule} from "@angular/common/http";
 import {AlertsModule} from "angular-alert-module";
-import {Ng2SearchPipeModule} from "ng2-search-filter";
 import {MatAutocompleteModule} from "@angular/material";
 import {MatFormFieldModule} from "@angular/material";
+import {NguiAutoCompleteModule} from "@ngui/auto-complete";
 
 import {ValidateService} from "./services/validate.service";
 import {AuthService} from "./services/auth.service";
@@ -51,7 +51,8 @@ const appRoutes: Routes = [
     FlashMessagesModule,
     HttpClientModule,
     MatAutocompleteModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    NguiAutoCompleteModule,
   ],
   providers: [ValidateService, FlashMessagesService, AuthService,AuthGuard,OverallService,IndividualService,AuthorService],
   bootstrap: [AppComponent]

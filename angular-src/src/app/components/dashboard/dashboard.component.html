@@ -1,5 +1,9 @@
 <body>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
 <div class="card bg-light mb-12">
   <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs" (click)="selectSection($event)">
@@ -112,21 +116,34 @@
           </tr>
         </table>
 
-        <table *ngIf="section==3" class="table table-hover">
+        <table *ngIf="section==3" class="table">
           <tr>
             <td class="input-group">
-              <input class="form-control" id="authorInput" type="text" placeholder="Enter author name here...">
-              <span class="input-group-btn"><button class="btn btn-info" id="authorBtn">Search</button></span>
+              <input style="width: 30rem" class="form-control" auto-complete [(ngModel)]="author" [source]="authors" type="text" placeholder="Enter author name here..."/>
+              <span class="input-group-btn"><button class="btn btn-info" (click)="getRevsOfAuthor(author)">Search</button></span>
             </td>
           </tr>
           <tr>
-            <td>Author: </td>
+            <td>Author: {{author}}</td>
           </tr>
           <tr>
-            <td>Articles list below: </td>
+            <td>The author has revised these articles: </td>
           </tr>
           <tr>
-            <td><div class="panel-group" id="accordion"></div></td>
+            <td>
+                <div class="card" *ngFor="let article of authorArticles" (click)="toggleDetails(article.title)">
+                  <ul class="list-group">
+                    <li class="list-group-item">{{article.title}} ({{article.revNums}} revisions)
+                    <span><i class="fas fa-chevron-down"></i></span>
+                    </li>
+                  </ul>
+                  <span *ngIf="article.show">
+                    <ul>
+                      <li *ngFor="let time of article.timestamp">{{time}}</li>
+                    </ul>
+                  </span>
+                </div>
+            </td>
           </tr>
         </table>
       </div>

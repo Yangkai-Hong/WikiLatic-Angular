@@ -93,7 +93,7 @@ router.get('/infos',(req,res,next) =>{
             }
         }
     })
-	next()
+	next();
 });
 
 router.get('/infos',(req,res,next) =>{
